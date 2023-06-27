@@ -14,8 +14,13 @@ Laravel Admin & BREAD System
 You can try Laravel Demo here [https://joy-voyager.kodmonk.com](https://joy-voyager.kodmonk.com).
 
 ## Installation Steps
+### 1. Enable Sodium extension 
+Search in your machine php.ini. Then, find `Sodium` and remove the semicolon at front of the word
 
-### 1. Clone repo/Install Using Composer
+### 2. Update Composer
+Run `composer update` 
+
+### 3. Clone repo/Install Using Composer
 
 You can clone/install the `Voyager Demo` with the following commands:
 
@@ -28,7 +33,7 @@ composer create-project joy/voyager-laravel-demo
 cd voyager-laravel-demo
 ```
 
-### 2. Add the DB Credentials & APP_URL
+### 4. Add the DB Credentials & APP_URL
 
 Next make sure to create a new database and add your database credentials to your .env file:
 
@@ -45,7 +50,7 @@ You will also want to update your website URL inside of the `APP_URL` variable i
 APP_URL=http://localhost:8000
 ```
 
-### 3. Run The Installer
+### 5. Run The Installer
 
 Lastly, we can install voyager. You can do this either with or without dummy data.
 The dummy data will include 1 admin account (if no users already exists), 1 demo page, 4 demo posts, 2 categories and 7 settings.
