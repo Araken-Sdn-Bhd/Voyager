@@ -67,6 +67,11 @@ If you prefer installing it with dummy run
 php artisan voyager:install --with-dummy
 ```
 
+To set the APP_KEY value in your .env file run
+```bash
+php artisan key:generate
+```
+
 And we're all good to go!
 
 Start up a local development server with `php artisan serve` And, visit [http://localhost:8000/admin](http://localhost:8000/admin).
